@@ -1,0 +1,859 @@
+2018-12-06 10:38:15.773 INFO  (main) [   ] o.e.j.u.log Logging initialized @650ms to org.eclipse.jetty.util.log.Slf4jLog
+2018-12-06 10:38:15.911 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.11.v20180605; built: 2018-06-05T18:24:03.829Z; git: d5fc0523cfa96bfebfbda19606cad384d772f04c; jvm 1.8.0_121-b13
+2018-12-06 10:38:15.936 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///Users/Philip/solr-7.5.0/server/contexts/] at interval 0
+2018-12-06 10:38:16.134 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2018-12-06 10:38:16.142 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2018-12-06 10:38:16.142 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2018-12-06 10:38:16.144 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
+2018-12-06 10:38:16.187 INFO  (main) [   ] o.a.s.u.c.SSLCredentialProviderFactory Processing SSL Credential Provider chain: env;sysprop
+2018-12-06 10:38:16.210 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2018-12-06 10:38:16.214 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.5.0
+2018-12-06 10:38:16.214 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2018-12-06 10:38:16.214 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /Users/Philip/solr-7.5.0
+2018-12-06 10:38:16.215 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2018-12-06T10:38:16.215Z
+2018-12-06 10:38:16.235 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /Users/Philip/solr-7.5.0/server/solr
+2018-12-06 10:38:16.240 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Users/Philip/solr-7.5.0/server/solr/solr.xml
+2018-12-06 10:38:16.287 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@6a472554, but no JMX reporters were configured - adding default JMX reporter.
+2018-12-06 10:38:16.848 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2018-12-06 10:38:16.851 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2018-12-06 10:38:16.905 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6a472554
+2018-12-06 10:38:16.906 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6a472554
+2018-12-06 10:38:16.911 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6a472554
+2018-12-06 10:38:16.937 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 0 core definitions underneath /Users/Philip/solr-7.5.0/server/solr
+2018-12-06 10:38:16.979 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@7b02881e{/solr,file:///Users/Philip/solr-7.5.0/server/solr-webapp/webapp/,AVAILABLE}{/Users/Philip/solr-7.5.0/server/solr-webapp/webapp}
+2018-12-06 10:38:16.993 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@7894f09b{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
+2018-12-06 10:38:16.993 INFO  (main) [   ] o.e.j.s.Server Started @1871ms
+2018-12-06 10:38:23.097 INFO  (qtp1169794610-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1544091676146} status=0 QTime=19
+2018-12-06 10:38:23.097 INFO  (qtp1169794610-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1544091676146} status=0 QTime=19
+2018-12-06 10:38:23.113 INFO  (qtp1169794610-34) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1544091676146} status=0 QTime=35
+2018-12-06 10:38:27.915 INFO  (qtp1169794610-16) [   x:nutch] o.a.s.h.a.CoreAdminOperation core create command schema=schema.xml&dataDir=data&name=nutch&action=CREATE&config=solrconfig.xml&instanceDir=nutch&wt=json&_=1544091676146
+2018-12-06 10:38:27.957 INFO  (qtp1169794610-16) [   x:nutch] o.a.s.c.SolrResourceLoader [nutch] Added 56 libs to classloader, from paths: [/Users/Philip/solr-7.5.0/contrib/clustering/lib, /Users/Philip/solr-7.5.0/contrib/extraction/lib, /Users/Philip/solr-7.5.0/contrib/langid/lib, /Users/Philip/solr-7.5.0/contrib/velocity/lib, /Users/Philip/solr-7.5.0/dist]
+2018-12-06 10:38:28.082 INFO  (qtp1169794610-16) [   x:nutch] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.5.0
+2018-12-06 10:38:28.194 INFO  (qtp1169794610-16) [   x:nutch] o.a.s.s.IndexSchema [nutch] Schema name=nutch
+2018-12-06 10:38:28.224 WARN  (qtp1169794610-16) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieDateField]. Please consult documentation how to replace it accordingly.
+2018-12-06 10:38:28.227 WARN  (qtp1169794610-16) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieDoubleField]. Please consult documentation how to replace it accordingly.
+2018-12-06 10:38:28.229 WARN  (qtp1169794610-16) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieFloatField]. Please consult documentation how to replace it accordingly.
+2018-12-06 10:38:28.234 WARN  (qtp1169794610-16) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieIntField]. Please consult documentation how to replace it accordingly.
+2018-12-06 10:38:28.238 WARN  (qtp1169794610-16) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.LatLonType]. Please consult documentation how to replace it accordingly.
+2018-12-06 10:38:28.240 WARN  (qtp1169794610-16) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieLongField]. Please consult documentation how to replace it accordingly.
+2018-12-06 10:38:28.272 WARN  (qtp1169794610-16) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.SynonymFilterFactory]. Please consult documentation how to replace it accordingly.
+2018-12-06 10:38:28.277 WARN  (qtp1169794610-16) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.WordDelimiterFilterFactory]. Please consult documentation how to replace it accordingly.
+2018-12-06 10:38:28.381 INFO  (qtp1169794610-16) [   x:nutch] o.a.s.s.IndexSchema Loaded schema nutch/1.5 with uniqueid field id
+2018-12-06 10:38:28.392 INFO  (qtp1169794610-16) [   x:nutch] o.a.s.c.CoreContainer Creating SolrCore 'nutch' using configuration from instancedir /Users/Philip/solr-7.5.0/server/solr/nutch, trusted=true
+2018-12-06 10:38:28.403 INFO  (qtp1169794610-16) [   x:nutch] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.nutch' (registry 'solr.core.nutch') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6a472554
+2018-12-06 10:38:28.416 INFO  (qtp1169794610-16) [   x:nutch] o.a.s.c.SolrCore [[nutch] ] Opening new SolrCore at [/Users/Philip/solr-7.5.0/server/solr/nutch], dataDir=[/Users/Philip/solr-7.5.0/server/solr/nutch/data/]
+2018-12-06 10:38:28.494 INFO  (qtp1169794610-16) [   x:nutch] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2018-12-06 10:38:28.840 INFO  (qtp1169794610-16) [   x:nutch] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2018-12-06 10:38:28.841 INFO  (qtp1169794610-16) [   x:nutch] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2018-12-06 10:38:28.853 INFO  (qtp1169794610-16) [   x:nutch] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2018-12-06 10:38:28.853 INFO  (qtp1169794610-16) [   x:nutch] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2018-12-06 10:38:28.872 INFO  (qtp1169794610-16) [   x:nutch] o.a.s.s.SolrIndexSearcher Opening [Searcher@7cdcdb0b[nutch] main]
+2018-12-06 10:38:28.884 INFO  (qtp1169794610-16) [   x:nutch] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/Philip/solr-7.5.0/server/solr/nutch/conf
+2018-12-06 10:38:28.902 INFO  (qtp1169794610-16) [   x:nutch] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2018-12-06 10:38:28.908 INFO  (qtp1169794610-16) [   x:nutch] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2018-12-06 10:38:28.921 INFO  (qtp1169794610-16) [   x:nutch] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2018-12-06 10:38:28.922 INFO  (searcherExecutor-10-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@7cdcdb0b[nutch] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2018-12-06 10:38:28.922 INFO  (searcherExecutor-10-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2018-12-06 10:38:28.922 INFO  (searcherExecutor-10-thread-1-processing-x:nutch) [   x:nutch] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2018-12-06 10:38:28.922 INFO  (qtp1169794610-16) [   x:nutch] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1619098556350595072
+2018-12-06 10:38:28.928 INFO  (searcherExecutor-10-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.SolrCore [nutch] Registered new searcher Searcher@7cdcdb0b[nutch] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2018-12-06 10:38:28.929 INFO  (qtp1169794610-16) [   x:nutch] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={schema=schema.xml&dataDir=data&name=nutch&action=CREATE&config=solrconfig.xml&instanceDir=nutch&wt=json&_=1544091676146} status=0 QTime=1016
+2018-12-06 10:38:28.953 INFO  (qtp1169794610-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1544091676146} status=0 QTime=0
+2018-12-06 10:38:28.956 INFO  (qtp1169794610-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1544091676146} status=0 QTime=3
+2018-12-06 10:38:28.968 INFO  (qtp1169794610-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1544091676146} status=0 QTime=15
+2018-12-06 10:45:26.504 INFO  (qtp1169794610-19) [   x:nutch] o.a.s.u.p.LogUpdateProcessorFactory [nutch]  webapp=/solr path=/update params={wt=javabin&version=2}{add=[https://mobile.twitter.com/gop (1619098994082840576), https://mobile.twitter.com/potus (1619098994139463680), https://mobile.twitter.com/realdonaldtrump (1619098994143657984), https://mobile.twitter.com/senatedems (1619098994150998016), https://mobile.twitter.com/senategop (1619098994156240896), https://mobile.twitter.com/statedept (1619098994160435200), https://pbs.twimg.com/profile_banners/14344823/1485465563/1500x500 (1619098994165678080), https://pbs.twimg.com/profile_banners/73238146/1531140003/1500x500 (1619098994166726656), https://twitter.com/ (1619098994167775232), https://twitter.com/GOP (1619098994170920960), ... (36 adds)]} 0 182
+2018-12-06 10:45:26.515 INFO  (qtp1169794610-14) [   x:nutch] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1619098994228592640,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2018-12-06 10:45:26.515 INFO  (qtp1169794610-14) [   x:nutch] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@56471d8f commitCommandVersion:1619098994228592640
+2018-12-06 10:45:26.610 INFO  (qtp1169794610-14) [   x:nutch] o.a.s.s.SolrIndexSearcher Opening [Searcher@78a23ad9[nutch] main]
+2018-12-06 10:45:26.611 INFO  (qtp1169794610-14) [   x:nutch] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2018-12-06 10:45:26.612 INFO  (searcherExecutor-10-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@78a23ad9[nutch] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.5.0):C36)))}
+2018-12-06 10:45:26.612 INFO  (searcherExecutor-10-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2018-12-06 10:45:26.616 INFO  (searcherExecutor-10-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.SolrCore [nutch] Registered new searcher Searcher@78a23ad9[nutch] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.5.0):C36)))}
+2018-12-06 10:45:26.619 INFO  (qtp1169794610-14) [   x:nutch] o.a.s.u.p.LogUpdateProcessorFactory [nutch]  webapp=/solr path=/update params={waitSearcher=true&commit=true&softCommit=false&wt=javabin&version=2}{commit=} 0 105
+2018-12-06 10:45:26.621 INFO  (qtp1169794610-23) [   x:nutch] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1619098994339741696,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2018-12-06 10:45:26.622 INFO  (qtp1169794610-23) [   x:nutch] o.a.s.u.DirectUpdateHandler2 No uncommitted changes. Skipping IW.commit.
+2018-12-06 10:45:26.622 INFO  (qtp1169794610-23) [   x:nutch] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2018-12-06 10:45:26.622 INFO  (qtp1169794610-23) [   x:nutch] o.a.s.u.p.LogUpdateProcessorFactory [nutch]  webapp=/solr path=/update params={waitSearcher=true&commit=true&softCommit=false&wt=javabin&version=2}{commit=} 0 1
+2018-12-06 10:45:32.227 INFO  (qtp1169794610-21) [   x:nutch] o.a.s.c.SolrResourceLoader [nutch] Added 56 libs to classloader, from paths: [/Users/Philip/solr-7.5.0/contrib/clustering/lib, /Users/Philip/solr-7.5.0/contrib/extraction/lib, /Users/Philip/solr-7.5.0/contrib/langid/lib, /Users/Philip/solr-7.5.0/contrib/velocity/lib, /Users/Philip/solr-7.5.0/dist]
+2018-12-06 10:45:32.248 INFO  (qtp1169794610-21) [   x:nutch] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.5.0
+2018-12-06 10:45:32.277 INFO  (qtp1169794610-21) [   x:nutch] o.a.s.s.IndexSchema [nutch] Schema name=nutch
+2018-12-06 10:45:32.344 INFO  (qtp1169794610-21) [   x:nutch] o.a.s.s.IndexSchema Loaded schema nutch/1.5 with uniqueid field id
+2018-12-06 10:45:32.352 INFO  (qtp1169794610-21) [   x:nutch] o.a.s.c.CoreContainer Reloading SolrCore 'nutch' using configuration from instancedir /Users/Philip/solr-7.5.0/server/solr/nutch
+2018-12-06 10:45:32.369 INFO  (qtp1169794610-21) [   x:nutch] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.nutch' (registry 'solr.core.nutch') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6a472554
+2018-12-06 10:45:32.369 INFO  (qtp1169794610-21) [   x:nutch] o.a.s.c.SolrCore [[nutch] ] Opening new SolrCore at [/Users/Philip/solr-7.5.0/server/solr/nutch], dataDir=[/Users/Philip/solr-7.5.0/server/solr/nutch/data/]
+2018-12-06 10:45:32.371 INFO  (qtp1169794610-21) [   x:nutch] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2018-12-06 10:45:32.404 INFO  (qtp1169794610-21) [   x:nutch] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2018-12-06 10:45:32.404 INFO  (qtp1169794610-21) [   x:nutch] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2018-12-06 10:45:32.407 INFO  (qtp1169794610-21) [   x:nutch] o.a.s.s.SolrIndexSearcher Opening [Searcher@ef8021[nutch] main]
+2018-12-06 10:45:32.407 INFO  (qtp1169794610-21) [   x:nutch] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/Philip/solr-7.5.0/server/solr/nutch/conf
+2018-12-06 10:45:32.408 INFO  (qtp1169794610-21) [   x:nutch] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2018-12-06 10:45:32.408 INFO  (qtp1169794610-21) [   x:nutch] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2018-12-06 10:45:32.408 INFO  (qtp1169794610-21) [   x:nutch] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2018-12-06 10:45:32.409 INFO  (searcherExecutor-15-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@ef8021[nutch] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.5.0):C36)))}
+2018-12-06 10:45:32.409 INFO  (searcherExecutor-15-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2018-12-06 10:45:32.409 INFO  (searcherExecutor-15-thread-1-processing-x:nutch) [   x:nutch] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2018-12-06 10:45:32.413 INFO  (searcherExecutor-15-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.SolrCore [nutch] Registered new searcher Searcher@ef8021[nutch] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.5.0):C36)))}
+2018-12-06 10:45:32.423 INFO  (qtp1169794610-21) [   x:nutch] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2018-12-06 10:45:32.425 INFO  (qtp1169794610-21) [   x:nutch] o.a.s.s.SolrIndexSearcher Opening [Searcher@37a28526[nutch] main]
+2018-12-06 10:45:32.426 INFO  (qtp1169794610-21) [   x:nutch] o.a.s.c.SolrCore [nutch]  CLOSING SolrCore org.apache.solr.core.SolrCore@25084fb6
+2018-12-06 10:45:32.426 INFO  (searcherExecutor-15-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@37a28526[nutch] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.5.0):C36)))}
+2018-12-06 10:45:32.426 INFO  (qtp1169794610-21) [   x:nutch] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.nutch, tag=25084fb6
+2018-12-06 10:45:32.426 INFO  (searcherExecutor-15-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2018-12-06 10:45:32.426 INFO  (qtp1169794610-21) [   x:nutch] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@728e6734: rootName = null, domain = solr.core.nutch, service url = null, agent id = null] for registry solr.core.nutch / com.codahale.metrics.MetricRegistry@38336017
+2018-12-06 10:45:32.428 INFO  (searcherExecutor-15-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.SolrCore [nutch] Registered new searcher Searcher@37a28526[nutch] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.5.0):C36)))}
+2018-12-06 10:45:32.432 INFO  (qtp1169794610-21) [   x:nutch] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=nutch&action=RELOAD&wt=json&_=1544091676146} status=0 QTime=222
+2018-12-06 10:45:33.456 INFO  (qtp1169794610-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1544091676146} status=0 QTime=0
+2018-12-06 10:45:33.458 INFO  (qtp1169794610-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1544091676146} status=0 QTime=1
+2018-12-06 10:45:33.472 INFO  (qtp1169794610-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1544091676146} status=0 QTime=14
+2018-12-06 10:45:34.997 INFO  (qtp1169794610-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1544091676146} status=0 QTime=0
+2018-12-06 10:45:35.012 INFO  (qtp1169794610-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/threads params={wt=json&_=1544093134994} status=0 QTime=13
+2018-12-06 10:45:35.017 INFO  (qtp1169794610-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1544091676146} status=0 QTime=19
+2018-12-06 10:45:36.040 INFO  (qtp1169794610-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1544091676146} status=0 QTime=0
+2018-12-06 10:45:36.041 INFO  (qtp1169794610-19) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1544092519162} status=0 QTime=1
+2018-12-06 10:45:36.043 INFO  (qtp1169794610-21) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/replication params={wt=json&command=details&_=1544092519162} status=0 QTime=2
+2018-12-06 10:45:36.045 INFO  (qtp1169794610-40) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1544091676146&ts=1544091676146} status=503 QTime=1
+2018-12-06 10:45:36.054 INFO  (qtp1169794610-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1544091676146} status=0 QTime=14
+2018-12-06 10:45:36.057 INFO  (qtp1169794610-20) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/system params={wt=json&_=1544092519162} status=0 QTime=14
+2018-12-06 10:45:38.055 INFO  (qtp1169794610-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1544091676146} status=0 QTime=0
+2018-12-06 10:45:38.069 INFO  (qtp1169794610-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1544091676146} status=0 QTime=13
+2018-12-06 10:45:39.697 INFO  (qtp1169794610-20) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=*:*&_=1544092520716} hits=36 status=0 QTime=24
+2018-12-06 10:45:40.732 INFO  (qtp1169794610-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=*:*} hits=36 status=0 QTime=0
+2018-12-06 10:46:31.761 INFO  (qtp1169794610-14) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:christmas} hits=2 status=0 QTime=6
+2018-12-06 10:46:48.579 INFO  (qtp1169794610-40) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:christmas} hits=2 status=0 QTime=0
+2018-12-06 10:47:23.946 INFO  (qtp1169794610-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:christmas} hits=2 status=0 QTime=0
+2018-12-06 10:47:50.639 ERROR (qtp1169794610-20) [   x:nutch] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'content:': Encountered "<EOF>" at line 1, column 8.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:272)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2541)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:709)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:515)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:377)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:323)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1634)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1317)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1219)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:219)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:531)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:352)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:281)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:762)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:680)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'content:': Encountered "<EOF>" at line 1, column 8.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:258)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:173)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	... 41 more
+Caused by: org.apache.solr.parser.ParseException: Encountered "<EOF>" at line 1, column 8.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:885)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:767)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:325)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
+	... 44 more
+
+2018-12-06 10:47:50.640 INFO  (qtp1169794610-20) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:} status=400 QTime=3
+2018-12-06 10:47:50.675 ERROR (qtp1169794610-19) [   x:nutch] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'content:': Encountered "<EOF>" at line 1, column 8.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:272)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2541)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:709)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:515)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:377)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:323)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1634)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1317)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1219)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:219)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:531)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:352)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:281)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:762)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:680)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'content:': Encountered "<EOF>" at line 1, column 8.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:258)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:173)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	... 41 more
+Caused by: org.apache.solr.parser.ParseException: Encountered "<EOF>" at line 1, column 8.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:885)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:767)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:325)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
+	... 44 more
+
+2018-12-06 10:47:50.675 INFO  (qtp1169794610-19) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:} status=400 QTime=1
+2018-12-06 10:47:52.112 ERROR (qtp1169794610-40) [   x:nutch] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'content:': Encountered "<EOF>" at line 1, column 8.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:272)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2541)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:709)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:515)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:377)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:323)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1634)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1317)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1219)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:219)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:531)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:352)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:281)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:762)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:680)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'content:': Encountered "<EOF>" at line 1, column 8.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:258)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:173)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	... 41 more
+Caused by: org.apache.solr.parser.ParseException: Encountered "<EOF>" at line 1, column 8.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:885)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:767)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:325)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
+	... 44 more
+
+2018-12-06 10:47:52.112 INFO  (qtp1169794610-40) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:} status=400 QTime=1
+2018-12-06 10:47:55.859 ERROR (qtp1169794610-17) [   x:nutch] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'content:': Encountered "<EOF>" at line 1, column 8.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:272)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2541)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:709)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:515)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:377)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:323)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1634)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1317)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1219)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:219)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:531)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:352)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:281)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:762)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:680)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'content:': Encountered "<EOF>" at line 1, column 8.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:258)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:173)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	... 41 more
+Caused by: org.apache.solr.parser.ParseException: Encountered "<EOF>" at line 1, column 8.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:885)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:767)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:325)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
+	... 44 more
+
+2018-12-06 10:47:55.859 INFO  (qtp1169794610-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:} status=400 QTime=1
+2018-12-06 10:47:57.534 ERROR (qtp1169794610-20) [   x:nutch] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'content::': Encountered " ":" ": "" at line 1, column 8.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:272)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2541)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:709)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:515)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:377)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:323)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1634)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1317)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1219)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:219)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:531)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:352)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:281)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:762)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:680)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'content::': Encountered " ":" ": "" at line 1, column 8.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:258)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:173)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	... 41 more
+Caused by: org.apache.solr.parser.ParseException: Encountered " ":" ": "" at line 1, column 8.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:885)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:767)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:325)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
+	... 44 more
+
+2018-12-06 10:47:57.535 INFO  (qtp1169794610-20) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content::} status=400 QTime=1
+2018-12-06 10:48:22.719 INFO  (qtp1169794610-19) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:*} hits=34 status=0 QTime=14
+2018-12-06 10:48:49.954 INFO  (qtp1169794610-40) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:*} hits=34 status=0 QTime=0
+2018-12-06 10:48:56.064 INFO  (qtp1169794610-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:*} hits=34 status=0 QTime=0
+2018-12-06 10:49:03.296 INFO  (qtp1169794610-20) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:*} hits=34 status=0 QTime=0
+2018-12-06 10:49:16.794 INFO  (qtp1169794610-19) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:*} hits=34 status=0 QTime=0
+2018-12-06 10:51:25.453 INFO  (qtp1169794610-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1544093485342} status=0 QTime=0
+2018-12-06 10:51:25.468 INFO  (qtp1169794610-45) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1544093485343} status=0 QTime=15
+2018-12-06 10:52:45.688 INFO  (qtp1169794610-20) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=text:hello&_=1544093485388} hits=0 status=0 QTime=1
+2018-12-06 10:52:52.652 INFO  (qtp1169794610-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=*:*&_=1544093485388} hits=36 status=0 QTime=0
+2018-12-06 10:53:03.014 INFO  (qtp1169794610-20) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=title:trump&_=1544093485388} hits=9 status=0 QTime=0
+2018-12-06 10:53:06.767 INFO  (qtp1169794610-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=title:trump} hits=9 status=0 QTime=0
+2018-12-06 10:54:00.321 INFO  (qtp1169794610-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1544093485342} status=0 QTime=0
+2018-12-06 10:54:00.324 INFO  (qtp1169794610-40) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/replication params={wt=json&command=details&_=1544093640313} status=0 QTime=0
+2018-12-06 10:54:00.338 INFO  (qtp1169794610-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1544093485343} status=0 QTime=14
+2018-12-06 10:54:01.957 INFO  (qtp1169794610-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1544093485342} status=0 QTime=0
+2018-12-06 10:54:01.959 INFO  (qtp1169794610-46) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1544093641939} status=0 QTime=2
+2018-12-06 10:54:01.962 INFO  (qtp1169794610-23) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/config params={wt=json&_=1544093641940} status=0 QTime=4
+2018-12-06 10:54:01.975 INFO  (qtp1169794610-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1544093485343} status=0 QTime=18
+2018-12-06 10:54:01.992 INFO  (qtp1169794610-46) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1544093641939} status=0 QTime=3
+2018-12-06 10:54:03.409 INFO  (qtp1169794610-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1544093485342} status=0 QTime=0
+2018-12-06 10:54:03.413 INFO  (qtp1169794610-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/segments params={wt=json&_=1544093643406} status=0 QTime=4
+2018-12-06 10:54:03.424 INFO  (qtp1169794610-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1544093485343} status=0 QTime=14
+2018-12-06 10:54:04.287 INFO  (qtp1169794610-46) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1544093485342} status=0 QTime=0
+2018-12-06 10:54:04.296 INFO  (qtp1169794610-40) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/mbeans params={stats=true&wt=json&_=1544093644282} status=0 QTime=8
+2018-12-06 10:54:04.302 INFO  (qtp1169794610-45) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1544093485343} status=0 QTime=15
+2018-12-06 10:54:04.870 INFO  (qtp1169794610-23) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/ping params={wt=json&_=1544093485343&ts=1544093485343} hits=36 status=0 QTime=1
+2018-12-06 10:54:04.870 INFO  (qtp1169794610-23) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/ping params={wt=json&_=1544093485343&ts=1544093485343} status=0 QTime=1
+2018-12-06 10:54:05.379 INFO  (qtp1169794610-45) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1544093485342} status=0 QTime=0
+2018-12-06 10:54:05.379 INFO  (qtp1169794610-35) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/file params={wt=json&_=1544093645374} status=0 QTime=0
+2018-12-06 10:54:05.393 INFO  (qtp1169794610-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1544093485343} status=0 QTime=14
+2018-12-06 10:54:05.393 INFO  (qtp1169794610-35) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1544093645374} status=0 QTime=1
+2018-12-06 10:54:06.080 INFO  (qtp1169794610-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1544093485342} status=0 QTime=0
+2018-12-06 10:54:06.081 INFO  (qtp1169794610-46) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1544093641939} status=0 QTime=1
+2018-12-06 10:54:06.095 INFO  (qtp1169794610-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1544093485343} status=0 QTime=15
+2018-12-06 10:54:06.858 INFO  (qtp1169794610-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1544093485342} status=0 QTime=0
+2018-12-06 10:54:06.858 INFO  (qtp1169794610-45) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1544093644282} status=0 QTime=0
+2018-12-06 10:54:06.873 INFO  (qtp1169794610-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1544093485343} status=0 QTime=14
+2018-12-06 10:54:06.879 INFO  (qtp1169794610-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1544093485342} status=0 QTime=0
+2018-12-06 10:54:06.879 INFO  (qtp1169794610-46) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1544093644282} status=0 QTime=0
+2018-12-06 10:54:07.724 INFO  (qtp1169794610-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1544093485342} status=0 QTime=0
+2018-12-06 10:54:07.726 INFO  (qtp1169794610-35) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1544093641939} status=0 QTime=1
+2018-12-06 10:54:07.740 INFO  (qtp1169794610-45) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1544093485343} status=0 QTime=15
+2018-12-06 11:00:38.110 INFO  (qtp1169794610-47) [   x:nutch] o.a.s.u.p.LogUpdateProcessorFactory [nutch]  webapp=/solr path=/update params={wt=javabin&version=2}{add=[https://about.twitter.com/ (1619099949576749056), https://about.twitter.com/en_us/company.html (1619099949581991936), https://about.twitter.com/en_us/company/brand-resources.html (1619099949586186240), https://about.twitter.com/en_us/lets-go-twitter.html (1619099949589331968), https://about.twitter.com/en_us/safety.html (1619099949593526272), https://about.twitter.com/en_us/values.html (1619099949595623424), https://blog.twitter.com/ (1619099949597720576), https://blog.twitter.com/etc/designs/blog-twitter/public/img/safari-pinned-tab.svg (1619099949599817728), https://blog.twitter.com/official/ar.html (1619099949599817729), https://blog.twitter.com/official/en_au.html (1619099949602963456), ... (585 adds)]} 0 504
+2018-12-06 11:00:38.122 INFO  (qtp1169794610-20) [   x:nutch] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1619099950117814272,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2018-12-06 11:00:38.122 INFO  (qtp1169794610-20) [   x:nutch] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@279fbf9 commitCommandVersion:1619099950117814272
+2018-12-06 11:00:38.358 INFO  (qtp1169794610-20) [   x:nutch] o.a.s.s.SolrIndexSearcher Opening [Searcher@15224e47[nutch] main]
+2018-12-06 11:00:38.359 INFO  (searcherExecutor-15-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@15224e47[nutch] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(7.5.0):C585)))}
+2018-12-06 11:00:38.359 INFO  (searcherExecutor-15-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2018-12-06 11:00:38.359 INFO  (qtp1169794610-20) [   x:nutch] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2018-12-06 11:00:38.361 INFO  (searcherExecutor-15-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.SolrCore [nutch] Registered new searcher Searcher@15224e47[nutch] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(7.5.0):C585)))}
+2018-12-06 11:00:38.363 INFO  (qtp1169794610-20) [   x:nutch] o.a.s.u.p.LogUpdateProcessorFactory [nutch]  webapp=/solr path=/update params={waitSearcher=true&commit=true&softCommit=false&wt=javabin&version=2}{commit=} 0 241
+2018-12-06 11:00:38.365 INFO  (qtp1169794610-51) [   x:nutch] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1619099950372618240,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2018-12-06 11:00:38.365 INFO  (qtp1169794610-51) [   x:nutch] o.a.s.u.DirectUpdateHandler2 No uncommitted changes. Skipping IW.commit.
+2018-12-06 11:00:38.366 INFO  (qtp1169794610-51) [   x:nutch] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2018-12-06 11:00:38.366 INFO  (qtp1169794610-51) [   x:nutch] o.a.s.u.p.LogUpdateProcessorFactory [nutch]  webapp=/solr path=/update params={waitSearcher=true&commit=true&softCommit=false&wt=javabin&version=2}{commit=} 0 1
+2018-12-06 11:00:44.987 INFO  (qtp1169794610-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1544093485342} status=0 QTime=0
+2018-12-06 11:00:44.987 INFO  (qtp1169794610-52) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1544093485342} status=0 QTime=0
+2018-12-06 11:00:44.999 INFO  (qtp1169794610-45) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1544093485343} status=0 QTime=12
+2018-12-06 11:00:45.015 INFO  (qtp1169794610-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1544093485342} status=0 QTime=0
+2018-12-06 11:00:45.015 INFO  (qtp1169794610-46) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1544093485342} status=0 QTime=0
+2018-12-06 11:00:46.615 INFO  (qtp1169794610-45) [   x:nutch] o.a.s.c.SolrResourceLoader [nutch] Added 56 libs to classloader, from paths: [/Users/Philip/solr-7.5.0/contrib/clustering/lib, /Users/Philip/solr-7.5.0/contrib/extraction/lib, /Users/Philip/solr-7.5.0/contrib/langid/lib, /Users/Philip/solr-7.5.0/contrib/velocity/lib, /Users/Philip/solr-7.5.0/dist]
+2018-12-06 11:00:46.644 INFO  (qtp1169794610-45) [   x:nutch] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.5.0
+2018-12-06 11:00:46.663 INFO  (qtp1169794610-45) [   x:nutch] o.a.s.s.IndexSchema [nutch] Schema name=nutch
+2018-12-06 11:00:46.708 INFO  (qtp1169794610-45) [   x:nutch] o.a.s.s.IndexSchema Loaded schema nutch/1.5 with uniqueid field id
+2018-12-06 11:00:46.713 INFO  (qtp1169794610-45) [   x:nutch] o.a.s.c.CoreContainer Reloading SolrCore 'nutch' using configuration from instancedir /Users/Philip/solr-7.5.0/server/solr/nutch
+2018-12-06 11:00:46.723 INFO  (qtp1169794610-45) [   x:nutch] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.nutch' (registry 'solr.core.nutch') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6a472554
+2018-12-06 11:00:46.723 INFO  (qtp1169794610-45) [   x:nutch] o.a.s.c.SolrCore [[nutch] ] Opening new SolrCore at [/Users/Philip/solr-7.5.0/server/solr/nutch], dataDir=[/Users/Philip/solr-7.5.0/server/solr/nutch/data/]
+2018-12-06 11:00:46.724 INFO  (qtp1169794610-45) [   x:nutch] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2018-12-06 11:00:46.755 INFO  (qtp1169794610-45) [   x:nutch] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2018-12-06 11:00:46.756 INFO  (qtp1169794610-45) [   x:nutch] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2018-12-06 11:00:46.757 INFO  (qtp1169794610-45) [   x:nutch] o.a.s.s.SolrIndexSearcher Opening [Searcher@fc5c8fe[nutch] main]
+2018-12-06 11:00:46.758 INFO  (qtp1169794610-45) [   x:nutch] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/Philip/solr-7.5.0/server/solr/nutch/conf
+2018-12-06 11:00:46.758 INFO  (qtp1169794610-45) [   x:nutch] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2018-12-06 11:00:46.758 INFO  (qtp1169794610-45) [   x:nutch] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2018-12-06 11:00:46.760 INFO  (qtp1169794610-45) [   x:nutch] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2018-12-06 11:00:46.760 INFO  (searcherExecutor-19-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@fc5c8fe[nutch] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(7.5.0):C585)))}
+2018-12-06 11:00:46.760 INFO  (searcherExecutor-19-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2018-12-06 11:00:46.760 INFO  (searcherExecutor-19-thread-1-processing-x:nutch) [   x:nutch] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2018-12-06 11:00:46.763 INFO  (searcherExecutor-19-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.SolrCore [nutch] Registered new searcher Searcher@fc5c8fe[nutch] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(7.5.0):C585)))}
+2018-12-06 11:00:46.767 INFO  (qtp1169794610-45) [   x:nutch] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2018-12-06 11:00:46.769 INFO  (qtp1169794610-45) [   x:nutch] o.a.s.s.SolrIndexSearcher Opening [Searcher@63433945[nutch] main]
+2018-12-06 11:00:46.769 INFO  (qtp1169794610-45) [   x:nutch] o.a.s.c.SolrCore [nutch]  CLOSING SolrCore org.apache.solr.core.SolrCore@1338aca7
+2018-12-06 11:00:46.769 INFO  (qtp1169794610-45) [   x:nutch] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.nutch, tag=1338aca7
+2018-12-06 11:00:46.769 INFO  (searcherExecutor-19-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@63433945[nutch] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(7.5.0):C585)))}
+2018-12-06 11:00:46.769 INFO  (searcherExecutor-19-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2018-12-06 11:00:46.769 INFO  (qtp1169794610-45) [   x:nutch] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@7f4fc922: rootName = null, domain = solr.core.nutch, service url = null, agent id = null] for registry solr.core.nutch / com.codahale.metrics.MetricRegistry@38336017
+2018-12-06 11:00:46.771 INFO  (searcherExecutor-19-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.SolrCore [nutch] Registered new searcher Searcher@63433945[nutch] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(7.5.0):C585)))}
+2018-12-06 11:00:46.772 INFO  (qtp1169794610-45) [   x:nutch] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=nutch&action=RELOAD&wt=json&_=1544093485342} status=0 QTime=169
+2018-12-06 11:00:47.792 INFO  (qtp1169794610-46) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1544093485342} status=0 QTime=0
+2018-12-06 11:00:47.794 INFO  (qtp1169794610-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1544093485342} status=0 QTime=1
+2018-12-06 11:00:47.805 INFO  (qtp1169794610-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1544093485343} status=0 QTime=13
+2018-12-06 11:00:47.924 INFO  (qtp1169794610-45) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1544093485342} status=0 QTime=0
+2018-12-06 11:00:47.924 INFO  (qtp1169794610-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1544093641939} status=0 QTime=0
+2018-12-06 11:00:47.928 INFO  (qtp1169794610-19) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1544093485343&ts=1544093485343} status=503 QTime=0
+2018-12-06 11:00:47.928 INFO  (qtp1169794610-51) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/replication params={wt=json&command=details&_=1544093640313} status=0 QTime=0
+2018-12-06 11:00:47.939 INFO  (qtp1169794610-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1544093485343} status=0 QTime=16
+2018-12-06 11:00:47.944 INFO  (qtp1169794610-23) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/system params={wt=json&_=1544094047920} status=0 QTime=16
+2018-12-06 11:00:49.011 INFO  (qtp1169794610-45) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1544093485342} status=0 QTime=0
+2018-12-06 11:00:49.023 INFO  (qtp1169794610-47) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1544093485343} status=0 QTime=11
+2018-12-06 11:00:50.104 INFO  (qtp1169794610-23) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=*:*&_=1544093485388} hits=585 status=0 QTime=0
+2018-12-06 11:00:56.103 INFO  (qtp1169794610-47) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=*:*} hits=585 status=0 QTime=0
+2018-12-06 11:00:59.587 INFO  (qtp1169794610-46) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:*} hits=517 status=0 QTime=20
+2018-12-06 11:01:25.215 INFO  (qtp1169794610-23) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:elections&_=1544093485388} hits=60 status=0 QTime=1
+2018-12-06 11:01:26.733 INFO  (qtp1169794610-47) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:elections} hits=60 status=0 QTime=0
+2018-12-06 11:02:39.172 INFO  (qtp1169794610-46) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:elections} hits=60 status=0 QTime=0
+2018-12-06 11:03:09.286 INFO  (qtp1169794610-19) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:trump} hits=67 status=0 QTime=1
+2018-12-06 11:03:34.326 INFO  (qtp1169794610-20) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:elections} hits=60 status=0 QTime=0
+2018-12-06 11:03:40.575 INFO  (qtp1169794610-52) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:*&_=1544093485388} hits=517 status=0 QTime=0
+2018-12-06 11:03:43.331 INFO  (qtp1169794610-20) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:*} hits=517 status=0 QTime=0
+2018-12-06 11:04:41.805 INFO  (qtp1169794610-45) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1544094281695} status=0 QTime=0
+2018-12-06 11:04:41.825 INFO  (qtp1169794610-46) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1544094281696} status=0 QTime=19
+2018-12-06 11:04:45.317 INFO  (qtp1169794610-52) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1544094281695} status=0 QTime=0
+2018-12-06 11:04:45.319 INFO  (qtp1169794610-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1544094281695} status=0 QTime=0
+2018-12-06 11:04:45.331 INFO  (qtp1169794610-51) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1544094281696} status=0 QTime=13
+2018-12-06 11:04:45.340 INFO  (qtp1169794610-46) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1544094281695} status=0 QTime=0
+2018-12-06 11:04:45.341 INFO  (qtp1169794610-45) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1544094281695} status=0 QTime=0
+2018-12-06 11:04:47.437 INFO  (qtp1169794610-51) [   x:new_core] o.a.s.h.a.CoreAdminOperation core create command schema=schema.xml&dataDir=data&name=new_core&action=CREATE&config=solrconfig.xml&instanceDir=new_core&wt=json&_=1544094281695
+2018-12-06 11:04:47.441 ERROR (qtp1169794610-51) [   x:new_core] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Error CREATEing SolrCore 'new_core': Unable to create core [new_core] Caused by: Can't find resource 'solrconfig.xml' in classpath or '/Users/Philip/solr-7.5.0/server/solr/new_core'
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1087)
+	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$0(CoreAdminOperation.java:92)
+	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:360)
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:395)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:180)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdmin(HttpSolrCall.java:734)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:715)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:496)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:377)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:323)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1634)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1317)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1219)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:219)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:531)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:352)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:281)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:762)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:680)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Unable to create core [new_core]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1159)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1048)
+	... 44 more
+Caused by: org.apache.solr.common.SolrException: Could not load conf for core new_core: Error loading solr config from /Users/Philip/solr-7.5.0/server/solr/new_core/conf/solrconfig.xml
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:97)
+	at org.apache.solr.core.CoreContainer.getConfigSet(CoreContainer.java:1187)
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1134)
+	... 45 more
+Caused by: org.apache.solr.common.SolrException: Error loading solr config from /Users/Philip/solr-7.5.0/server/solr/new_core/conf/solrconfig.xml
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:190)
+	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:109)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:91)
+	... 47 more
+Caused by: org.apache.solr.core.SolrResourceNotFoundException: Can't find resource 'solrconfig.xml' in classpath or '/Users/Philip/solr-7.5.0/server/solr/new_core'
+	at org.apache.solr.core.SolrResourceLoader.openResource(SolrResourceLoader.java:407)
+	at org.apache.solr.core.SolrResourceLoader.openConfig(SolrResourceLoader.java:362)
+	at org.apache.solr.core.Config.<init>(Config.java:120)
+	at org.apache.solr.core.Config.<init>(Config.java:90)
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:205)
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:182)
+	... 49 more
+
+2018-12-06 11:04:47.442 INFO  (qtp1169794610-51) [   x:new_core] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={schema=schema.xml&dataDir=data&name=new_core&action=CREATE&config=solrconfig.xml&instanceDir=new_core&wt=json&_=1544094281695} status=400 QTime=4
+2018-12-06 11:05:07.297 INFO  (qtp1169794610-51) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1544094307251} status=0 QTime=0
+2018-12-06 11:05:07.298 INFO  (qtp1169794610-52) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1544094307251} status=0 QTime=1
+2018-12-06 11:05:07.313 INFO  (qtp1169794610-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1544094307251} status=0 QTime=16
+2018-12-06 11:05:16.448 WARN  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector 
+java.io.IOException: Thread signal failed
+	at sun.nio.ch.NativeThread.signal(Native Method) ~[?:1.8.0_121]
+	at sun.nio.ch.ServerSocketChannelImpl.implCloseSelectableChannel(ServerSocketChannelImpl.java:292) ~[?:1.8.0_121]
+	at java.nio.channels.spi.AbstractSelectableChannel.implCloseChannel(AbstractSelectableChannel.java:234) ~[?:1.8.0_121]
+	at java.nio.channels.spi.AbstractInterruptibleChannel.close(AbstractInterruptibleChannel.java:115) ~[?:1.8.0_121]
+	at org.eclipse.jetty.server.ServerConnector.close(ServerConnector.java:352) [jetty-server-9.4.11.v20180605.jar:9.4.11.v20180605]
+	at org.eclipse.jetty.server.AbstractNetworkConnector.shutdown(AbstractNetworkConnector.java:105) [jetty-server-9.4.11.v20180605.jar:9.4.11.v20180605]
+	at org.eclipse.jetty.server.Server.doStop(Server.java:439) [jetty-server-9.4.11.v20180605.jar:9.4.11.v20180605]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89) [jetty-util-9.4.11.v20180605.jar:9.4.11.v20180605]
+	at org.eclipse.jetty.server.ShutdownMonitor$ShutdownMonitorRunnable.stopLifeCycles(ShutdownMonitor.java:443) [jetty-server-9.4.11.v20180605.jar:9.4.11.v20180605]
+	at org.eclipse.jetty.server.ShutdownMonitor$ShutdownMonitorRunnable.run(ShutdownMonitor.java:354) [jetty-server-9.4.11.v20180605.jar:9.4.11.v20180605]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_121]
+2018-12-06 11:05:16.455 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@7894f09b{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
+2018-12-06 11:05:16.456 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
+2018-12-06 11:05:16.456 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=873634936
+2018-12-06 11:05:16.457 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2018-12-06 11:05:16.457 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@6c5945a7: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node / com.codahale.metrics.MetricRegistry@42160b19
+2018-12-06 11:05:16.458 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2018-12-06 11:05:16.458 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@f478a81: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm / com.codahale.metrics.MetricRegistry@184c88a3
+2018-12-06 11:05:16.459 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2018-12-06 11:05:16.459 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@19553973: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty / com.codahale.metrics.MetricRegistry@2f75db0e
+2018-12-06 11:05:16.461 INFO  (coreCloseExecutor-23-thread-1) [   x:nutch] o.a.s.c.SolrCore [nutch]  CLOSING SolrCore org.apache.solr.core.SolrCore@459fff4b
+2018-12-06 11:05:16.461 INFO  (coreCloseExecutor-23-thread-1) [   x:nutch] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.nutch, tag=459fff4b
+2018-12-06 11:05:16.461 INFO  (coreCloseExecutor-23-thread-1) [   x:nutch] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@454d6768: rootName = null, domain = solr.core.nutch, service url = null, agent id = null] for registry solr.core.nutch / com.codahale.metrics.MetricRegistry@38336017
+2018-12-06 11:05:16.471 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@7b02881e{/solr,null,UNAVAILABLE}{/Users/Philip/solr-7.5.0/server/solr-webapp/webapp}

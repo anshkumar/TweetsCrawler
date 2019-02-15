@@ -1,0 +1,257 @@
+2018-12-05 11:25:19.196 INFO  (main) [   ] o.e.j.u.log Logging initialized @654ms to org.eclipse.jetty.util.log.Slf4jLog
+2018-12-05 11:25:19.336 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.11.v20180605; built: 2018-06-05T18:24:03.829Z; git: d5fc0523cfa96bfebfbda19606cad384d772f04c; jvm 1.8.0_121-b13
+2018-12-05 11:25:19.360 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///Users/Philip/solr-7.5.0/server/contexts/] at interval 0
+2018-12-05 11:25:19.564 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2018-12-05 11:25:19.570 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2018-12-05 11:25:19.571 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2018-12-05 11:25:19.572 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
+2018-12-05 11:25:19.615 INFO  (main) [   ] o.a.s.u.c.SSLCredentialProviderFactory Processing SSL Credential Provider chain: env;sysprop
+2018-12-05 11:25:19.638 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2018-12-05 11:25:19.642 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.5.0
+2018-12-05 11:25:19.643 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2018-12-05 11:25:19.643 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /Users/Philip/solr-7.5.0
+2018-12-05 11:25:19.643 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2018-12-05T11:25:19.643Z
+2018-12-05 11:25:19.663 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /Users/Philip/solr-7.5.0/server/solr
+2018-12-05 11:25:19.668 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Users/Philip/solr-7.5.0/server/solr/solr.xml
+2018-12-05 11:25:19.717 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@6a472554, but no JMX reporters were configured - adding default JMX reporter.
+2018-12-05 11:25:20.610 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2018-12-05 11:25:20.612 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2018-12-05 11:25:20.663 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6a472554
+2018-12-05 11:25:20.664 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6a472554
+2018-12-05 11:25:20.668 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6a472554
+2018-12-05 11:25:20.695 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 0 core definitions underneath /Users/Philip/solr-7.5.0/server/solr
+2018-12-05 11:25:20.736 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@7b02881e{/solr,file:///Users/Philip/solr-7.5.0/server/solr-webapp/webapp/,AVAILABLE}{/Users/Philip/solr-7.5.0/server/solr-webapp/webapp}
+2018-12-05 11:25:20.748 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@7894f09b{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
+2018-12-05 11:25:20.749 INFO  (main) [   ] o.e.j.s.Server Started @2209ms
+2018-12-05 11:25:24.868 INFO  (qtp1169794610-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1544009124781} status=0 QTime=31
+2018-12-05 11:25:24.868 INFO  (qtp1169794610-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1544009124781} status=0 QTime=32
+2018-12-05 11:25:24.887 INFO  (qtp1169794610-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1544009124781} status=0 QTime=51
+2018-12-05 11:25:30.611 INFO  (qtp1169794610-20) [   x:nutch] o.a.s.h.a.CoreAdminOperation core create command schema=schema.xml&dataDir=data&name=nutch&action=CREATE&config=solrconfig.xml&instanceDir=nutch&wt=json&_=1544009124781
+2018-12-05 11:25:30.651 INFO  (qtp1169794610-20) [   x:nutch] o.a.s.c.SolrResourceLoader [nutch] Added 56 libs to classloader, from paths: [/Users/Philip/solr-7.5.0/contrib/clustering/lib, /Users/Philip/solr-7.5.0/contrib/extraction/lib, /Users/Philip/solr-7.5.0/contrib/langid/lib, /Users/Philip/solr-7.5.0/contrib/velocity/lib, /Users/Philip/solr-7.5.0/dist]
+2018-12-05 11:25:30.791 INFO  (qtp1169794610-20) [   x:nutch] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.5.0
+2018-12-05 11:25:30.904 INFO  (qtp1169794610-20) [   x:nutch] o.a.s.s.IndexSchema [nutch] Schema name=nutch
+2018-12-05 11:25:30.932 WARN  (qtp1169794610-20) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieDateField]. Please consult documentation how to replace it accordingly.
+2018-12-05 11:25:30.934 WARN  (qtp1169794610-20) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieDoubleField]. Please consult documentation how to replace it accordingly.
+2018-12-05 11:25:30.936 WARN  (qtp1169794610-20) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieFloatField]. Please consult documentation how to replace it accordingly.
+2018-12-05 11:25:30.940 WARN  (qtp1169794610-20) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieIntField]. Please consult documentation how to replace it accordingly.
+2018-12-05 11:25:30.943 WARN  (qtp1169794610-20) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.LatLonType]. Please consult documentation how to replace it accordingly.
+2018-12-05 11:25:30.945 WARN  (qtp1169794610-20) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieLongField]. Please consult documentation how to replace it accordingly.
+2018-12-05 11:25:30.975 WARN  (qtp1169794610-20) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.SynonymFilterFactory]. Please consult documentation how to replace it accordingly.
+2018-12-05 11:25:30.993 WARN  (qtp1169794610-20) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.WordDelimiterFilterFactory]. Please consult documentation how to replace it accordingly.
+2018-12-05 11:25:31.083 INFO  (qtp1169794610-20) [   x:nutch] o.a.s.s.IndexSchema Loaded schema nutch/1.5 with uniqueid field id
+2018-12-05 11:25:31.094 INFO  (qtp1169794610-20) [   x:nutch] o.a.s.c.CoreContainer Creating SolrCore 'nutch' using configuration from instancedir /Users/Philip/solr-7.5.0/server/solr/nutch, trusted=true
+2018-12-05 11:25:31.104 INFO  (qtp1169794610-20) [   x:nutch] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.nutch' (registry 'solr.core.nutch') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6a472554
+2018-12-05 11:25:31.118 INFO  (qtp1169794610-20) [   x:nutch] o.a.s.c.SolrCore [[nutch] ] Opening new SolrCore at [/Users/Philip/solr-7.5.0/server/solr/nutch], dataDir=[/Users/Philip/solr-7.5.0/server/solr/nutch/data/]
+2018-12-05 11:25:31.194 INFO  (qtp1169794610-20) [   x:nutch] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2018-12-05 11:25:31.529 INFO  (qtp1169794610-20) [   x:nutch] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2018-12-05 11:25:31.529 INFO  (qtp1169794610-20) [   x:nutch] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2018-12-05 11:25:31.538 INFO  (qtp1169794610-20) [   x:nutch] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2018-12-05 11:25:31.538 INFO  (qtp1169794610-20) [   x:nutch] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2018-12-05 11:25:31.552 INFO  (qtp1169794610-20) [   x:nutch] o.a.s.s.SolrIndexSearcher Opening [Searcher@6afda948[nutch] main]
+2018-12-05 11:25:31.561 INFO  (qtp1169794610-20) [   x:nutch] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/Philip/solr-7.5.0/server/solr/nutch/conf
+2018-12-05 11:25:31.576 INFO  (qtp1169794610-20) [   x:nutch] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2018-12-05 11:25:31.581 INFO  (qtp1169794610-20) [   x:nutch] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2018-12-05 11:25:31.591 INFO  (qtp1169794610-20) [   x:nutch] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2018-12-05 11:25:31.592 INFO  (searcherExecutor-10-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@6afda948[nutch] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2018-12-05 11:25:31.592 INFO  (searcherExecutor-10-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2018-12-05 11:25:31.592 INFO  (searcherExecutor-10-thread-1-processing-x:nutch) [   x:nutch] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2018-12-05 11:25:31.592 INFO  (qtp1169794610-20) [   x:nutch] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1619010919168212992
+2018-12-05 11:25:31.600 INFO  (qtp1169794610-20) [   x:nutch] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={schema=schema.xml&dataDir=data&name=nutch&action=CREATE&config=solrconfig.xml&instanceDir=nutch&wt=json&_=1544009124781} status=0 QTime=990
+2018-12-05 11:25:31.600 INFO  (searcherExecutor-10-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.SolrCore [nutch] Registered new searcher Searcher@6afda948[nutch] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2018-12-05 11:25:33.371 INFO  (qtp1169794610-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1544009124781} status=0 QTime=0
+2018-12-05 11:25:33.387 INFO  (qtp1169794610-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1544009124781} status=0 QTime=16
+2018-12-05 11:25:34.446 INFO  (qtp1169794610-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1544009124781} status=0 QTime=0
+2018-12-05 11:25:34.454 INFO  (qtp1169794610-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1544009124781} status=0 QTime=8
+2018-12-05 11:25:34.475 INFO  (qtp1169794610-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1544009124781} status=0 QTime=29
+2018-12-05 11:25:34.494 INFO  (qtp1169794610-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1544009124781} status=0 QTime=0
+2018-12-05 11:25:34.494 INFO  (qtp1169794610-34) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1544009124781} status=0 QTime=0
+2018-12-05 11:59:40.293 INFO  (qtp1169794610-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1544011180243} status=0 QTime=0
+2018-12-05 11:59:40.296 INFO  (qtp1169794610-34) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1544011180243} status=0 QTime=0
+2018-12-05 11:59:40.310 INFO  (qtp1169794610-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1544011180244} status=0 QTime=14
+2018-12-05 11:59:42.403 INFO  (qtp1169794610-21) [   x:nutch] o.a.s.c.SolrResourceLoader [nutch] Added 56 libs to classloader, from paths: [/Users/Philip/solr-7.5.0/contrib/clustering/lib, /Users/Philip/solr-7.5.0/contrib/extraction/lib, /Users/Philip/solr-7.5.0/contrib/langid/lib, /Users/Philip/solr-7.5.0/contrib/velocity/lib, /Users/Philip/solr-7.5.0/dist]
+2018-12-05 11:59:42.424 INFO  (qtp1169794610-21) [   x:nutch] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.5.0
+2018-12-05 11:59:42.449 INFO  (qtp1169794610-21) [   x:nutch] o.a.s.s.IndexSchema [nutch] Schema name=nutch
+2018-12-05 11:59:42.507 INFO  (qtp1169794610-21) [   x:nutch] o.a.s.s.IndexSchema Loaded schema nutch/1.5 with uniqueid field id
+2018-12-05 11:59:42.515 INFO  (qtp1169794610-21) [   x:nutch] o.a.s.c.CoreContainer Reloading SolrCore 'nutch' using configuration from instancedir /Users/Philip/solr-7.5.0/server/solr/nutch
+2018-12-05 11:59:42.533 INFO  (qtp1169794610-21) [   x:nutch] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.nutch' (registry 'solr.core.nutch') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6a472554
+2018-12-05 11:59:42.533 INFO  (qtp1169794610-21) [   x:nutch] o.a.s.c.SolrCore [[nutch] ] Opening new SolrCore at [/Users/Philip/solr-7.5.0/server/solr/nutch], dataDir=[/Users/Philip/solr-7.5.0/server/solr/nutch/data/]
+2018-12-05 11:59:42.538 INFO  (qtp1169794610-21) [   x:nutch] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2018-12-05 11:59:42.573 INFO  (qtp1169794610-21) [   x:nutch] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2018-12-05 11:59:42.573 INFO  (qtp1169794610-21) [   x:nutch] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2018-12-05 11:59:42.575 INFO  (qtp1169794610-21) [   x:nutch] o.a.s.s.SolrIndexSearcher Opening [Searcher@4c3031a1[nutch] main]
+2018-12-05 11:59:42.576 INFO  (qtp1169794610-21) [   x:nutch] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/Philip/solr-7.5.0/server/solr/nutch/conf
+2018-12-05 11:59:42.576 INFO  (qtp1169794610-21) [   x:nutch] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2018-12-05 11:59:42.576 INFO  (qtp1169794610-21) [   x:nutch] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2018-12-05 11:59:42.577 INFO  (qtp1169794610-21) [   x:nutch] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2018-12-05 11:59:42.577 INFO  (searcherExecutor-15-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@4c3031a1[nutch] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2018-12-05 11:59:42.577 INFO  (searcherExecutor-15-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2018-12-05 11:59:42.577 INFO  (searcherExecutor-15-thread-1-processing-x:nutch) [   x:nutch] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2018-12-05 11:59:42.578 INFO  (qtp1169794610-21) [   x:nutch] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1619013069782908928
+2018-12-05 11:59:42.583 INFO  (searcherExecutor-15-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.SolrCore [nutch] Registered new searcher Searcher@4c3031a1[nutch] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2018-12-05 11:59:42.586 INFO  (qtp1169794610-21) [   x:nutch] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2018-12-05 11:59:42.587 INFO  (qtp1169794610-21) [   x:nutch] o.a.s.s.SolrIndexSearcher Opening [Searcher@41964862[nutch] main]
+2018-12-05 11:59:42.588 INFO  (qtp1169794610-21) [   x:nutch] o.a.s.c.SolrCore [nutch]  CLOSING SolrCore org.apache.solr.core.SolrCore@50bee6b4
+2018-12-05 11:59:42.588 INFO  (qtp1169794610-21) [   x:nutch] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.nutch, tag=50bee6b4
+2018-12-05 11:59:42.588 INFO  (searcherExecutor-15-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@41964862[nutch] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2018-12-05 11:59:42.588 INFO  (qtp1169794610-21) [   x:nutch] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@7165bfbe: rootName = null, domain = solr.core.nutch, service url = null, agent id = null] for registry solr.core.nutch / com.codahale.metrics.MetricRegistry@32c4e802
+2018-12-05 11:59:42.588 INFO  (searcherExecutor-15-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2018-12-05 11:59:42.592 INFO  (searcherExecutor-15-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.SolrCore [nutch] Registered new searcher Searcher@41964862[nutch] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2018-12-05 11:59:42.596 INFO  (qtp1169794610-21) [   x:nutch] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=nutch&action=RELOAD&wt=json&_=1544011180243} status=0 QTime=215
+2018-12-05 11:59:43.622 INFO  (qtp1169794610-34) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1544011180243} status=0 QTime=0
+2018-12-05 11:59:43.623 INFO  (qtp1169794610-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1544011180243} status=0 QTime=0
+2018-12-05 11:59:43.638 INFO  (qtp1169794610-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1544011180244} status=0 QTime=16
+2018-12-05 11:59:56.994 INFO  (qtp1169794610-23) [   x:nutch] o.a.s.u.p.LogUpdateProcessorFactory [nutch]  webapp=/solr path=/update params={wt=javabin&version=2}{add=[http://cccis.jp/ (1619013083844313088), http://dir.gmane.org/gmane.comp.web.nginx.english (1619013083891499008), http://dir.gmane.org/gmane.comp.web.nginx.russian (1619013083895693312), http://gihyo.jp/magazine/wdpress/plus/978-4-7741-7866-0 (1619013083898839040), http://gmpg.org/xfn/11 (1619013083916664832), http://harukasan.jp/ (1619013083919810560), http://hg.nginx.org/nginx/ (1619013083922956288), http://hg.nginx.org/unit (1619013083924004864), http://mailman.nginx.org/pipermail/nginx-announce/2012/000076.html (1619013083924004865), http://mailman.nginx.org/pipermail/nginx-announce/2012/000080.html (1619013083926102016), ... (718 adds)]} 0 1053
+2018-12-05 11:59:57.009 INFO  (qtp1169794610-22) [   x:nutch] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1619013084914909184,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2018-12-05 11:59:57.009 INFO  (qtp1169794610-22) [   x:nutch] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@58dc4c21 commitCommandVersion:1619013084914909184
+2018-12-05 11:59:57.422 INFO  (qtp1169794610-22) [   x:nutch] o.a.s.s.SolrIndexSearcher Opening [Searcher@65ceb823[nutch] main]
+2018-12-05 11:59:57.423 INFO  (qtp1169794610-22) [   x:nutch] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2018-12-05 11:59:57.423 INFO  (searcherExecutor-15-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@65ceb823[nutch] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.5.0):C718)))}
+2018-12-05 11:59:57.423 INFO  (searcherExecutor-15-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2018-12-05 11:59:57.425 INFO  (searcherExecutor-15-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.SolrCore [nutch] Registered new searcher Searcher@65ceb823[nutch] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.5.0):C718)))}
+2018-12-05 11:59:57.425 INFO  (qtp1169794610-22) [   x:nutch] o.a.s.u.p.LogUpdateProcessorFactory [nutch]  webapp=/solr path=/update params={waitSearcher=true&commit=true&softCommit=false&wt=javabin&version=2}{commit=} 0 417
+2018-12-05 11:59:57.428 INFO  (qtp1169794610-23) [   x:nutch] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1619013085354262528,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2018-12-05 11:59:57.428 INFO  (qtp1169794610-23) [   x:nutch] o.a.s.u.DirectUpdateHandler2 No uncommitted changes. Skipping IW.commit.
+2018-12-05 11:59:57.428 INFO  (qtp1169794610-23) [   x:nutch] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2018-12-05 11:59:57.428 INFO  (qtp1169794610-23) [   x:nutch] o.a.s.u.p.LogUpdateProcessorFactory [nutch]  webapp=/solr path=/update params={waitSearcher=true&commit=true&softCommit=false&wt=javabin&version=2}{commit=} 0 1
+2018-12-05 11:59:59.562 INFO  (qtp1169794610-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1544011199514} status=0 QTime=0
+2018-12-05 11:59:59.563 INFO  (qtp1169794610-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1544011199514} status=0 QTime=0
+2018-12-05 11:59:59.576 INFO  (qtp1169794610-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1544011199514} status=0 QTime=14
+2018-12-05 12:00:01.988 INFO  (qtp1169794610-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1544011199514} status=0 QTime=0
+2018-12-05 12:00:01.990 INFO  (qtp1169794610-34) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1544011201982} status=0 QTime=1
+2018-12-05 12:00:01.994 INFO  (qtp1169794610-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1544011199514&ts=1544011199514} status=503 QTime=1
+2018-12-05 12:00:01.995 INFO  (qtp1169794610-19) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/replication params={wt=json&command=details&_=1544011201982} status=0 QTime=2
+2018-12-05 12:00:02.006 INFO  (qtp1169794610-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1544011199514} status=0 QTime=17
+2018-12-05 12:00:02.015 INFO  (qtp1169794610-15) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/system params={wt=json&_=1544011201982} status=0 QTime=22
+2018-12-05 12:00:04.075 INFO  (qtp1169794610-34) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1544011199514} status=0 QTime=0
+2018-12-05 12:00:04.088 INFO  (qtp1169794610-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1544011199514} status=0 QTime=13
+2018-12-05 12:00:05.485 INFO  (qtp1169794610-15) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=*:*&_=1544011204027} hits=718 status=0 QTime=27
+2018-12-05 12:00:11.647 INFO  (qtp1169794610-21) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=*:*} hits=718 status=0 QTime=0
+2018-12-05 12:00:44.025 INFO  (qtp1169794610-15) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:elections&_=1544011204027} hits=12 status=0 QTime=9
+2018-12-05 12:00:45.360 INFO  (qtp1169794610-20) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=content:elections} hits=12 status=0 QTime=1
+2018-12-05 12:01:36.229 INFO  (qtp1169794610-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1544011199514} status=0 QTime=0
+2018-12-05 12:01:36.231 INFO  (qtp1169794610-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1544011199514} status=0 QTime=0
+2018-12-05 12:01:36.245 INFO  (qtp1169794610-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1544011199514} status=0 QTime=14
+2018-12-05 12:01:36.271 INFO  (qtp1169794610-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1544011199514} status=0 QTime=0
+2018-12-05 12:01:36.273 INFO  (qtp1169794610-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1544011199514} status=0 QTime=2
+2018-12-05 12:02:04.483 INFO  (qtp1169794610-23) [   x:nutch] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.nutch, tag=null
+2018-12-05 12:02:04.483 INFO  (qtp1169794610-23) [   x:nutch] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@65a873e9: rootName = null, domain = solr.core.nutch, service url = null, agent id = null] for registry solr.core.nutch / com.codahale.metrics.MetricRegistry@32c4e802
+2018-12-05 12:02:04.488 INFO  (qtp1169794610-23) [   x:nutch] o.a.s.c.SolrCore [nutch]  CLOSING SolrCore org.apache.solr.core.SolrCore@3912a372
+2018-12-05 12:02:04.488 INFO  (qtp1169794610-23) [   x:nutch] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.nutch, tag=3912a372
+2018-12-05 12:02:04.494 INFO  (qtp1169794610-23) [   x:nutch] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=nutch&action=UNLOAD&wt=json&_=1544011199514} status=0 QTime=12
+2018-12-05 12:02:04.516 INFO  (qtp1169794610-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1544011199514} status=0 QTime=0
+2018-12-05 12:02:04.516 INFO  (qtp1169794610-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1544011199514} status=0 QTime=0
+2018-12-05 12:02:04.530 INFO  (qtp1169794610-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1544011199514} status=0 QTime=14
+2018-12-05 12:02:52.502 INFO  (qtp1169794610-34) [   x:new_core] o.a.s.h.a.CoreAdminOperation core create command schema=schema.xml&dataDir=data&name=new_core&action=CREATE&config=solrconfig.xml&instanceDir=new_core&wt=json&_=1544011199514
+2018-12-05 12:02:52.505 ERROR (qtp1169794610-34) [   x:new_core] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Error CREATEing SolrCore 'new_core': Unable to create core [new_core] Caused by: Can't find resource 'solrconfig.xml' in classpath or '/Users/Philip/solr-7.5.0/server/solr/new_core'
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1087)
+	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$0(CoreAdminOperation.java:92)
+	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:360)
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:395)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:180)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdmin(HttpSolrCall.java:734)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:715)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:496)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:377)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:323)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1634)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1317)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1219)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:219)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:531)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:352)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:281)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:762)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:680)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Unable to create core [new_core]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1159)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1048)
+	... 44 more
+Caused by: org.apache.solr.common.SolrException: Could not load conf for core new_core: Error loading solr config from /Users/Philip/solr-7.5.0/server/solr/new_core/conf/solrconfig.xml
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:97)
+	at org.apache.solr.core.CoreContainer.getConfigSet(CoreContainer.java:1187)
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1134)
+	... 45 more
+Caused by: org.apache.solr.common.SolrException: Error loading solr config from /Users/Philip/solr-7.5.0/server/solr/new_core/conf/solrconfig.xml
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:190)
+	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:109)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:91)
+	... 47 more
+Caused by: org.apache.solr.core.SolrResourceNotFoundException: Can't find resource 'solrconfig.xml' in classpath or '/Users/Philip/solr-7.5.0/server/solr/new_core'
+	at org.apache.solr.core.SolrResourceLoader.openResource(SolrResourceLoader.java:407)
+	at org.apache.solr.core.SolrResourceLoader.openConfig(SolrResourceLoader.java:362)
+	at org.apache.solr.core.Config.<init>(Config.java:120)
+	at org.apache.solr.core.Config.<init>(Config.java:90)
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:205)
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:182)
+	... 49 more
+
+2018-12-05 12:02:52.506 INFO  (qtp1169794610-34) [   x:new_core] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={schema=schema.xml&dataDir=data&name=new_core&action=CREATE&config=solrconfig.xml&instanceDir=new_core&wt=json&_=1544011199514} status=400 QTime=4
+2018-12-05 12:03:15.745 INFO  (qtp1169794610-19) [   x:new_core] o.a.s.h.a.CoreAdminOperation core create command schema=schema.xml&dataDir=data&name=new_core&action=CREATE&config=solrconfig.xml&instanceDir=new_core&wt=json&_=1544011199514
+2018-12-05 12:03:15.778 INFO  (qtp1169794610-19) [   x:new_core] o.a.s.c.SolrResourceLoader [new_core] Added 56 libs to classloader, from paths: [/Users/Philip/solr-7.5.0/contrib/clustering/lib, /Users/Philip/solr-7.5.0/contrib/extraction/lib, /Users/Philip/solr-7.5.0/contrib/langid/lib, /Users/Philip/solr-7.5.0/contrib/velocity/lib, /Users/Philip/solr-7.5.0/dist]
+2018-12-05 12:03:15.794 INFO  (qtp1169794610-19) [   x:new_core] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.5.0
+2018-12-05 12:03:15.813 INFO  (qtp1169794610-19) [   x:new_core] o.a.s.s.IndexSchema [new_core] Schema name=nutch
+2018-12-05 12:03:15.857 INFO  (qtp1169794610-19) [   x:new_core] o.a.s.s.IndexSchema Loaded schema nutch/1.5 with uniqueid field id
+2018-12-05 12:03:15.862 INFO  (qtp1169794610-19) [   x:new_core] o.a.s.c.CoreContainer Creating SolrCore 'new_core' using configuration from instancedir /Users/Philip/solr-7.5.0/server/solr/new_core, trusted=true
+2018-12-05 12:03:15.862 INFO  (qtp1169794610-19) [   x:new_core] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.new_core' (registry 'solr.core.new_core') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6a472554
+2018-12-05 12:03:15.863 INFO  (qtp1169794610-19) [   x:new_core] o.a.s.c.SolrCore [[new_core] ] Opening new SolrCore at [/Users/Philip/solr-7.5.0/server/solr/new_core], dataDir=[/Users/Philip/solr-7.5.0/server/solr/new_core/data/]
+2018-12-05 12:03:15.867 INFO  (qtp1169794610-19) [   x:new_core] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2018-12-05 12:03:15.895 INFO  (qtp1169794610-19) [   x:new_core] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2018-12-05 12:03:15.895 INFO  (qtp1169794610-19) [   x:new_core] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2018-12-05 12:03:15.896 INFO  (qtp1169794610-19) [   x:new_core] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2018-12-05 12:03:15.896 INFO  (qtp1169794610-19) [   x:new_core] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2018-12-05 12:03:15.899 INFO  (qtp1169794610-19) [   x:new_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@5211d0bd[new_core] main]
+2018-12-05 12:03:15.900 INFO  (qtp1169794610-19) [   x:new_core] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/Philip/solr-7.5.0/server/solr/new_core/conf
+2018-12-05 12:03:15.901 INFO  (qtp1169794610-19) [   x:new_core] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2018-12-05 12:03:15.901 INFO  (qtp1169794610-19) [   x:new_core] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2018-12-05 12:03:15.903 INFO  (qtp1169794610-19) [   x:new_core] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2018-12-05 12:03:15.903 INFO  (searcherExecutor-19-thread-1-processing-x:new_core) [   x:new_core] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@5211d0bd[new_core] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2018-12-05 12:03:15.904 INFO  (searcherExecutor-19-thread-1-processing-x:new_core) [   x:new_core] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2018-12-05 12:03:15.904 INFO  (searcherExecutor-19-thread-1-processing-x:new_core) [   x:new_core] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2018-12-05 12:03:15.904 INFO  (qtp1169794610-19) [   x:new_core] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1619013293471432704
+2018-12-05 12:03:15.905 INFO  (searcherExecutor-19-thread-1-processing-x:new_core) [   x:new_core] o.a.s.c.SolrCore [new_core] Registered new searcher Searcher@5211d0bd[new_core] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2018-12-05 12:03:15.906 INFO  (qtp1169794610-19) [   x:new_core] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={schema=schema.xml&dataDir=data&name=new_core&action=CREATE&config=solrconfig.xml&instanceDir=new_core&wt=json&_=1544011199514} status=0 QTime=161
+2018-12-05 12:03:15.926 INFO  (qtp1169794610-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1544011199514} status=0 QTime=0
+2018-12-05 12:03:15.931 INFO  (qtp1169794610-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1544011199514} status=0 QTime=1
+2018-12-05 12:03:15.946 INFO  (qtp1169794610-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1544011199514} status=0 QTime=15
+2018-12-05 12:04:53.937 INFO  (qtp1169794610-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1544011493873} status=0 QTime=0
+2018-12-05 12:04:53.939 INFO  (qtp1169794610-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1544011493873} status=0 QTime=0
+2018-12-05 12:04:53.957 INFO  (qtp1169794610-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1544011493874} status=0 QTime=17
+2018-12-05 12:04:57.824 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@7894f09b{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
+2018-12-05 12:04:57.824 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
+2018-12-05 12:04:57.825 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=873634936
+2018-12-05 12:04:57.826 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2018-12-05 12:04:57.826 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@6c5945a7: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node / com.codahale.metrics.MetricRegistry@61bc4314
+2018-12-05 12:04:57.828 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2018-12-05 12:04:57.828 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@f478a81: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm / com.codahale.metrics.MetricRegistry@66b220fe
+2018-12-05 12:04:57.828 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2018-12-05 12:04:57.828 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@19553973: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty / com.codahale.metrics.MetricRegistry@5cc987da
+2018-12-05 12:04:57.830 INFO  (coreCloseExecutor-24-thread-1) [   x:new_core] o.a.s.c.SolrCore [new_core]  CLOSING SolrCore org.apache.solr.core.SolrCore@590b398c
+2018-12-05 12:04:57.830 INFO  (coreCloseExecutor-24-thread-1) [   x:new_core] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.new_core, tag=590b398c
+2018-12-05 12:04:57.830 INFO  (coreCloseExecutor-24-thread-1) [   x:new_core] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@6a9ec8bb: rootName = null, domain = solr.core.new_core, service url = null, agent id = null] for registry solr.core.new_core / com.codahale.metrics.MetricRegistry@4926575c
+2018-12-05 12:04:57.840 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@7b02881e{/solr,null,UNAVAILABLE}{/Users/Philip/solr-7.5.0/server/solr-webapp/webapp}
