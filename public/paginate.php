@@ -1,19 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>CRAWLER</title>
-	<link rel="stylesheet" href="assets/css/stylesheet.css">
-  <meta name="viewport" content="width=1024">
-</head>
-<body>
-	<h1>🇺🇸 US ELECTIONS 2020 TWEETS SEARCH ENGINE 🇺🇸</h1>
-
-	<form action="" method="POST">
-		<!-- <input type="text" /> -->
-    <input type="text" name="query" id="querybox" onkeyup="searchEngine()" placeholder="Search for tweets..">
-  </form> 
-
-  <?php
+<?php
 
   $query = $_POST["query"];
   $query = str_replace(" ", "%20", $query);
@@ -55,9 +40,6 @@
     $json_a = $json_tot[response][docs];
     $array_length = count($json_a);
 		// echo $array_length;
-
-
-
 
 
     echo "<div id='allResults' style='display:none'>";
@@ -149,13 +131,8 @@
       echo "</div>";
     }
 
-
-
     echo "TOTAL NUMBER OF TWEETS: " . count($tweets);
     echo "<br>";
-
-
-
 
     if(isset($_GET['upTweet'])){
       // upTweet();
@@ -180,28 +157,7 @@
       // print_r($tweets);
       // echo $tweets[$_GET[downTweet]];
     }
-
-
-
-
   }
 
   echo "</div>";
-
-
   ?>
-
-
-  <script src="assets/js/script.js"></script>
-
-  <script type="text/javascript">
-    var jArray = <?php echo json_encode($tweets); ?>;
-
-    for(var i=1; i<jArray.length; i++){
-      // LIST ALL TWEETS IN CONSOLE LOG
-      // console.log(jArray[i]);
-    }
-  </script>
-
-</body>
-</html>
